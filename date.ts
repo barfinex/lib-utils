@@ -20,6 +20,7 @@ export function isWeekend(d: string | number | Date) {
     return day === 6 || day === 0; // 6 = Saturday, 0 = Sunday
 }
 
+
 /**
  * Create date with custom ISO format (preffered for Tinkoff history API)
  * @param date date
@@ -28,7 +29,7 @@ export function toIsoString(date: Date | number | string) {
     date = new Date(date);
     const tzo = -date.getTimezoneOffset(),
         dif = tzo >= 0 ? '+' : '-',
-        pad = function(num: number) {
+        pad = function (num: number) {
             const norm = Math.floor(Math.abs(num));
             return (norm < 10 ? '0' : '') + norm;
         };
