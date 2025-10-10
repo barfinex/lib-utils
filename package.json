@@ -1,8 +1,8 @@
 {
   "name": "@barfinex/utils",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "private": false,
-  "description": "Shared utils for Barfinex ecosystem",
+  "description": "Utility functions and helper classes for the Barfinex ecosystem. Includes type guards, HTTP client, Redis client, and common helpers for trading applications.",
   "author": "Barfinex",
   "license": "MIT",
   "homepage": "https://github.com/barfinex/lib-utils#readme",
@@ -23,6 +23,17 @@
     "clean": "rimraf dist",
     "release": "semantic-release"
   },
+  "keywords": [
+    "barfinex",
+    "utils",
+    "typescript",
+    "redis",
+    "http-client",
+    "axios",
+    "nestjs",
+    "trading",
+    "library"
+  ],
   "devDependencies": {
     "typescript": "^5.6.0",
     "rimraf": "^5.0.0",
@@ -31,7 +42,8 @@
     "@semantic-release/git": "^10.0.0",
     "@semantic-release/github": "^10.0.0",
     "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/release-notes-generator": "^14.0.0"
+    "@semantic-release/release-notes-generator": "^14.0.0",
+    "@types/node": "^20.11.30"
   },
   "publishConfig": {
     "access": "public"

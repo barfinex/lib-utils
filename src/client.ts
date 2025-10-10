@@ -154,7 +154,7 @@ export class redisClient {
 
         this.redis = createClient({ url: url });
 
-        this.redis.on('error', (err) => console.error(err));
+        this.redis.on('error', (err: unknown) => console.error(err));
         this.redis.connect();
     }
 
