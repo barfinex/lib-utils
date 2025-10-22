@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "libs/types"
+    },
+    {
+      "path": "libs/utils"
+    },
+    {
+      "path": "libs/connectors"
+    },
+    {
+      "path": "libs/orders"
+    },
+    {
+      "path": "libs/key"
+    },
+    {
+      "path": "libs/plugin-driver"
+    },
+    {
+      "path": "libs/detector"
+    }
+  ]
+}
