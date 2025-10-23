@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
@@ -13,11 +13,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "composite": true,
-    "baseUrl": "../../",
+    "baseUrl": "./",
     "paths": {
       "@barfinex/types": [
-        "libs/types/src",
-        "node_modules/@barfinex/types"
+        "../types/src",
+        "./node_modules/@barfinex/types"
       ]
     }
   },
