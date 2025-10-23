@@ -29,10 +29,5 @@
     "dist",
     "**/*.spec.ts",
     "**/*.test.ts"
-  ],
-  "references": [
-    {
-      "path": "../types"
-    }
   ]
 }
