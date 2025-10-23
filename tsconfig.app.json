@@ -16,7 +16,8 @@
     "baseUrl": "../../",
     "paths": {
       "@barfinex/types": [
-        "libs/types/src"
+        "libs/types/src",
+        "node_modules/@barfinex/types"
       ]
     }
   },
