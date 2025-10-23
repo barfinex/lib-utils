@@ -5,15 +5,15 @@
     "module": "CommonJS",
     "declaration": true,
     "emitDeclarationOnly": false,
-    "rootDir": "./src",
-    "outDir": "../../dist/libs/utils", // ✅ общий dist
+    "rootDir": "src",
+    "outDir": "../../dist/libs/utils",
     "tsBuildInfoFile": "../../dist/libs/utils.tsbuildinfo",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "composite": true,
-    "baseUrl": "../../", // ✅ чтобы алиасы резолвились одинаково
+    "baseUrl": "../../",
     "paths": {
       "@barfinex/types": [
         "libs/types/src"
@@ -32,6 +32,6 @@
   "references": [
     {
       "path": "../types"
-    } // ✅ зависимость от types
+    }
   ]
 }
