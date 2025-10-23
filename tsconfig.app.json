@@ -14,12 +14,7 @@
     "forceConsistentCasingInFileNames": true,
     "composite": true,
     "baseUrl": "./",
-    "paths": {
-      "@barfinex/types": [
-        "../types/src",
-        "./node_modules/@barfinex/types"
-      ]
-    }
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*.ts"
