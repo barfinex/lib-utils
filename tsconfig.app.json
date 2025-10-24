@@ -5,15 +5,15 @@
     "module": "CommonJS",
     "declaration": true,
     "emitDeclarationOnly": false,
-    "rootDir": "./src",
-    "outDir": "../../dist/libs/utils", // ✅ общий dist
-    "tsBuildInfoFile": "../../dist/libs/utils.tsbuildinfo",
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "composite": true,
-    "baseUrl": "../../", // ✅ чтобы алиасы резолвились одинаково
+    "baseUrl": "../../",
     "paths": {
       "@barfinex/types": [
         "libs/types/src"
