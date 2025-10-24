@@ -16,7 +16,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.app.json",
@@ -34,6 +35,9 @@
     "trading",
     "library"
   ],
+  "dependencies": {
+    "@barfinex/types": "latest"
+  },
   "devDependencies": {
     "typescript": "^5.6.0",
     "rimraf": "^5.0.0",

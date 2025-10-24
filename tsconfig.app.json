@@ -31,7 +31,7 @@
   ],
   "references": [
     {
-      "path": "../types"
+      "path": "@barfinex/types"
     } // ✅ зависимость от types
   ]
 }
