@@ -5,16 +5,20 @@
     "module": "CommonJS",
     "declaration": true,
     "emitDeclarationOnly": false,
-    "rootDir": "src",
-    "outDir": "../../dist/libs/utils",
+    "rootDir": "./src",
+    "outDir": "../../dist/libs/utils", // ✅ общий dist
     "tsBuildInfoFile": "../../dist/libs/utils.tsbuildinfo",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "composite": true,
-    "baseUrl": "./",
-    "moduleResolution": "node"
+    "baseUrl": "../../", // ✅ чтобы алиасы резолвились одинаково
+    "paths": {
+      "@barfinex/types": [
+        "libs/types/src"
+      ]
+    }
   },
   "include": [
     "src/**/*.ts"
@@ -24,5 +28,10 @@
     "dist",
     "**/*.spec.ts",
     "**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "../types"
+    } // ✅ зависимость от types
   ]
 }

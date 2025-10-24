@@ -19,8 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rimraf dist",
     "build": "tsc -p tsconfig.app.json",
+    "clean": "rimraf dist",
     "release": "semantic-release"
   },
   "keywords": [
@@ -34,22 +34,16 @@
     "trading",
     "library"
   ],
-  "dependencies": {
-    "@barfinex/types": "^1.0.0",
-    "axios": "^1.7.7",
-    "redis": "^4.6.13"
-  },
   "devDependencies": {
     "typescript": "^5.6.0",
-    "@types/node": "^20.11.30",
-    "@types/redis": "^4.0.11",
     "rimraf": "^5.0.0",
     "semantic-release": "^24.0.0",
     "@semantic-release/npm": "^12.0.0",
     "@semantic-release/git": "^10.0.0",
     "@semantic-release/github": "^10.0.0",
     "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/release-notes-generator": "^14.0.0"
+    "@semantic-release/release-notes-generator": "^14.0.0",
+    "@types/node": "^20.11.30"
   },
   "publishConfig": {
     "access": "public"
