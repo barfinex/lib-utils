@@ -36,7 +36,9 @@
     "library"
   ],
   "dependencies": {
-    "@barfinex/types": "latest"
+    "@barfinex/types": "latest",
+    "axios": "^1.7.0",
+    "redis": "^4.6.0"
   },
   "devDependencies": {
     "typescript": "^5.6.0",
