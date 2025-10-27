@@ -9,7 +9,7 @@
     "emitDeclarationOnly": false,
     /* === структура === */
     "rootDir": "src",
-    "outDir": "../../dist/libs/utils",
+    "outDir": "./dist",
     "tsBuildInfoFile": "../../dist/libs/utils.tsbuildinfo",
     /* === строгость и совместимость === */
     "strict": true,
@@ -35,4 +35,9 @@
     "**/*.spec.ts",
     "**/*.test.ts"
   ],
+  "references": [
+    {
+      "path": "../types"
+    }
+  ]
 }
