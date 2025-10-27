@@ -18,6 +18,7 @@ export function toDomainCandle(raw: CandleRaw): Candle {
 }
 
 
+
 /**
  * Конвертация domain → raw.
  */
