@@ -8,20 +8,29 @@
   "homepage": "https://github.com/barfinex/lib-utils#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/barfinex/lib-utils.git"
+    "url": "git+https://github.com/barfinex/lib-utils.git"
   },
   "bugs": {
     "url": "https://github.com/barfinex/lib-utils/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist",
     "README.md"
   ],
+  "sideEffects": false,
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
     "build": "tsc -p tsconfig.app.json",
+    "build:npm": "tsc -p tsconfig.build.json",
     "rebuild": "npm run clean && npm run build",
     "release": "semantic-release"
   },
