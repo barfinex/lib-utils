@@ -91,6 +91,9 @@ export function intervalToMs(interval: TimeFrame) {
         case TimeFrame.h1:
             time = 60;
             break;
+        case TimeFrame.h2:
+            time = 120;
+            break;
         case TimeFrame.h4:
             time = 240;
             break;
